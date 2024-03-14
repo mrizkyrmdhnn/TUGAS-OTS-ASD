@@ -74,4 +74,14 @@ int main() {
     printf("\nThe Length is updated to %d", lengthOfText);
 
     return 0;
+    
 }
+
+
+    //Penjelasan Dibawah : 
+    //Baris 1-3: Mendefinisikan tiga direktif penghubung yang diperlukan dan konstanta-konstanta untuk panjang maksimum dan minimum teks.
+    //Baris 5-18: Mendefinisikan tiga fungsi yaitu lessThanRequired(), equalThanRequired(), dan moreThanRequired(), masing-masing menangani kasus panjang teks kurang dari, sama dengan, atau lebih dari panjang yang diharapkan.
+    //Baris 20-32: Mendefinisikan fungsi checkLengthRequirement() yang memeriksa panjang teks yang diberikan dan mengembalikan nilai yang sesuai berdasarkan kondisi panjang teks.
+    //Baris 34-53: Fungsi main() membuka file "file.txt", membaca teks dari file tersebut, menutup file, memeriksa panjang teks menggunakan checkLengthRequirement(), dan kemudian memanggil salah satu dari tiga fungsi yang didefinisikan sebelumnya berdasarkan hasil pemeriksaan panjang teks.
+    //Baris 56-59: Array options yang merupakan array dari tiga pointer ke fungsi, yang digunakan untuk memilih fungsi yang sesuai tanpa menggunakan struktur kontrol seperti if atau switch.
+    //Dalam baris 56-59, fungsi options[selectOption](&lengthOfText); akan memilih fungsi yang sesuai sesuai dengan nilai yang dikembalikan oleh checkLengthRequirement().
